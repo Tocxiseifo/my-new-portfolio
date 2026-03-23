@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: seif;
+  src: url('../src/assets/Fonts/Uni\ Sans\ Heavy\ Italic.otf');
+}
+
+@theme{
+  --color-main-color:oklch(11.49% 0.000 0);
+  --color-text-color:oklch(100.00% 0.000 0);
+  --color-third-color:oklch(55.40% 0.227 29.23);
+  --font-seif: seif , 'sens-serif'
+}
