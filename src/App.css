@@ -5,6 +5,9 @@
   src: url('../src/assets/Fonts/Uni\ Sans\ Heavy\ Italic.otf');
 }
 
+*{
+  scroll-behavior: smooth;
+}
 @theme{
   --color-main-color:oklch(11.49% 0.000 0);
   --color-text-color:oklch(100.00% 0.000 0);

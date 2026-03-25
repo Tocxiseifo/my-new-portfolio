@@ -3,7 +3,7 @@ import { useState , useEffect } from "react";
 export default function useMouseTracker() {
     const [mousePosition , setMousePosition] = useState<{
         x:number | null,
-        y:number | null,
+        y:number| null,
     }>({
         x:null,
         y:null,
@@ -12,7 +12,7 @@ export default function useMouseTracker() {
     useEffect(() => {
         const handle = (e: MouseEvent) => {
             setMousePosition({
-                x: e.clientX, // أدق وأخف في الحسابات
+                x: e.clientX,
                 y: e.clientY
             });
         };
