@@ -24,7 +24,7 @@ export default function HeroSection() {
       // إعدادات الرعشة (Glitch Animation)
 
   return (
-    <section id='home' className="relative h-240  bg-[#050505] flex items-center justify-center overflow-hidden font-seif">
+    <section id='home' className="relative h-250  bg-[#050505] flex items-center justify-center overflow-hidden font-seif">
       {/* اسمك في الخلفية بتأثير شفاف */}
       <motion.h1 initial={{opacity:0 , y:100}} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{duration:1 , ease:'easeOut' ,delay:0.2}} className="absolute text-[18vw]   font-black text-white/5 uppercase select-none font-seif">
         Seif Venom

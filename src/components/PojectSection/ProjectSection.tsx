@@ -25,9 +25,9 @@ export default function ProjectSection() {
                         className="flex flex-col w-full h-auto pt-20 "
 
                         >
-                            <div className="flex flex-col h-15  ml-5 relative  border-2 border-transparent text-main-color rounded-md overflow-hidden group ">
+                            <div className="flex flex-col h-18  ml-5 relative  border-2 border-transparent text-main-color rounded-md overflow-hidden group ">
                                 <span className="absolute inset-0 bg-black translate-y-full group-hover:translate-y-0 transition-transform duration-400 z-0"></span>
-                                <div className="relative flex flex-col z-10 h-35 group-hover:text-white transition-colors duration-400">
+                                <div className="relative flex flex-col z-10 ml-5 mt-2 h-37 group-hover:text-white transition-colors duration-400">
                                     <a href={project.Link} className="text-2xl cursor-pointer border-2 border-b-main-color border-t-transparent border-x-transparent ">{project.title}</a>
                                     <span className="text-gray-400 text-sm">{project.techStack}</span>
                                 </div>
