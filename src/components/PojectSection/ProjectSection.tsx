@@ -23,13 +23,12 @@ export default function ProjectSection() {
                         onMouseLeave={() => setActiveId(null)}
                         transition={{duration:1 , ease:'easeOut' ,delay:index * 0.6}}  
                         className="flex flex-col w-full h-auto pt-20 "
-
                         >
                             <div className="flex flex-col h-18  ml-5 relative  border-2 border-transparent text-main-color rounded-md overflow-hidden group ">
                                 <span className="absolute inset-0 bg-black translate-y-full group-hover:translate-y-0 transition-transform duration-400 z-0"></span>
                                 <div className="relative flex flex-col z-10 ml-5 mt-2 h-37 group-hover:text-white transition-colors duration-400">
                                     <a href={project.Link} className="text-2xl cursor-pointer border-2 border-b-main-color border-t-transparent border-x-transparent ">{project.title}</a>
-                                    <span className="text-gray-400 text-sm">{project.techStack}</span>
+                                    <span className="text-gray-400 text-sm ">{project.techStack}</span>
                                 </div>
                             </div>
                             <AnimatePresence>
@@ -40,8 +39,8 @@ export default function ProjectSection() {
                                     opacity: 1, 
                                     scale: 1, 
                                     rotate: 0,
-                                    x: x ?? 0 - 50, // تشفيت بسيط عشان متبقاش تحت الماوس بالظبط
-                                    y: y ?? 0 + 150  // بتطلع لفوق شوية عشان تبان جنب الكلمة
+                                    x: x ?? 0 - 50, 
+                                    y: y ?? 0 + 150  
                                     }}
                                     exit={{ opacity: 0, scale: 0.8, rotate: -5 }}
                                     transition={{ type: 'spring', stiffness: 150, damping: 15 }}
@@ -52,7 +51,7 @@ export default function ProjectSection() {
                                     alt={project.title} 
                                     className="w-full h-full object-cover  transition-all  duration-700"
                                     />
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                                    <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent" />
                                 </motion.div>
                                 )}
                             </AnimatePresence>

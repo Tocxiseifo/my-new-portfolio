@@ -3,7 +3,7 @@ import { motion , useScroll } from "motion/react"
 
 const NavBarList = [
     {
-        id:'#home',
+        id:'#',
         text:'Home'
     },
     {
@@ -35,7 +35,7 @@ export default function NavBar() {
                     <motion.a href={nav.id}  initial={{opacity:0 , y:100}} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{duration:1 , ease:'easeOut' ,delay:index * 0.6}}  className={HoverStyle} key={nav.id}>{nav.text}</motion.a>
                 ))}
               </div>
-                <motion.span style={{ scaleX: scrollYProgress, originX: 0 }} className="border-2 w-full "></motion.span>
+                <motion.span style={{ scaleX: scrollYProgress, originX: 0 }} className="border-2 w-full relative bottom-2.5"></motion.span>
             </motion.nav>
         </>
     )

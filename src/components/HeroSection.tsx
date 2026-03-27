@@ -25,7 +25,6 @@ export default function HeroSection() {
 
   return (
     <section id='home' className="relative h-250  bg-[#050505] flex items-center justify-center overflow-hidden font-seif">
-      {/* اسمك في الخلفية بتأثير شفاف */}
       <motion.h1 initial={{opacity:0 , y:100}} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{duration:1 , ease:'easeOut' ,delay:0.2}} className="absolute text-[18vw]   font-black text-white/5 uppercase select-none font-seif">
         Seif Venom
       </motion.h1>
@@ -46,7 +45,6 @@ export default function HeroSection() {
           />
         </motion.div>
 
-        {/* صورة Venom (تظهر عند الـ Hover) */}
         <motion.div
           className="absolute inset-0 z-10"
           variants={glitchVariants}
@@ -59,11 +57,9 @@ export default function HeroSection() {
           />
         </motion.div>
 
-        {/* تأثير الـ Overlay (إضافة لمسة درامية) */}
         <div className="absolute inset-0 bg-linear-to-t from-black/80 to-transparent z-30 pointer-events-none" />
       </motion.div>
 
-      {/* نص تعريفي بسيط بجانب الصورة */}
       <div className="absolute bottom-20 left-10 z-40 text-white">
         <motion.p initial={{opacity:0 , x:-100}} whileInView={{ opacity: 0.50, x: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{duration:1 , ease:'easeOut' ,delay:0.4}} className="text-sm tracking-[0.3em] uppercase opacity-50"> Seif Venom </motion.p>
         <motion.h2 initial={{opacity:0 , x:-100}} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{duration:1 , ease:'easeOut' ,delay:0.8}} className="text-4xl font-bold tracking-tighter">Front-End Developer</motion.h2>

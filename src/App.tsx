@@ -6,7 +6,7 @@ import NavBar from './components/LayOut/NavBar'
 import ProjectSection from './components/PojectSection/ProjectSection'
 import AboutMeSection from './components/About Me Section/AboutMeSection';
 import MySkillsSection from './components/MySkills Section/MySkillsSection';
-// import useMouseTracker from './Hooks/useMouse'
+import ContactSection from './components/Contact Section/ContactSection';
 
 
 
@@ -23,11 +23,12 @@ function App() {
   return (    
     <>
       <NavBar />
-      <div className='bg-main-color w-full h-1000 font-seif  relative aspect-3/4'>
+      <div className='bg-main-color w-full h-auto font-seif  relative aspect-3/4'>
         <HeroSection />
         <ProjectSection />
         <MySkillsSection />
         <AboutMeSection />  
+        <ContactSection/>
       </div>
     </>
   )
