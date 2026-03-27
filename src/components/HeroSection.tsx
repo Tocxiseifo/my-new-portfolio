@@ -24,12 +24,12 @@ export default function HeroSection() {
       // إعدادات الرعشة (Glitch Animation)
 
   return (
-    <section id='home' className="relative h-250  bg-[#050505] flex items-center justify-center overflow-hidden font-seif">
-      <motion.h1 initial={{opacity:0 , y:100}} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{duration:1 , ease:'easeOut' ,delay:0.2}} className="absolute text-[18vw]   font-black text-white/5 uppercase select-none font-seif">
+    <section id='home' className="relative min-h-auto lg:h-250 bg-[#050505] flex lg:mt-25 items-center justify-center overflow-hidden font-seif px-4 sm:px-6 lg:px-0">
+      <motion.h1 initial={{opacity:0 , y:100}} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{duration:1 , ease:'easeOut' ,delay:0.2}} className="absolute text-[16vw] lg:text-[18vw] font-black text-white/5 uppercase select-none  font-seif">
         Seif Venom
       </motion.h1>
 
-      <motion.div initial={{opacity:0 , y:-100}} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{duration:1 , ease:'easeOut' ,delay:0.5}}  className="relative z-10 w-[400px] h-[600px] group cursor-pointer">
+      <motion.div initial={{opacity:0 , y:-100}} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{duration:1 , ease:'easeOut' ,delay:0.5}}  className="relative z-10 w-[260px] h-[390px] sm:w-[320px] sm:h-[480px] lg:w-[400px] lg:h-[600px] group cursor-pointer">
         
         {/* الصورة الأساسية (Normal) */}
         <motion.div
@@ -60,9 +60,9 @@ export default function HeroSection() {
         <div className="absolute inset-0 bg-linear-to-t from-black/80 to-transparent z-30 pointer-events-none" />
       </motion.div>
 
-      <div className="absolute bottom-20 left-10 z-40 text-white">
-        <motion.p initial={{opacity:0 , x:-100}} whileInView={{ opacity: 0.50, x: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{duration:1 , ease:'easeOut' ,delay:0.4}} className="text-sm tracking-[0.3em] uppercase opacity-50"> Seif Venom </motion.p>
-        <motion.h2 initial={{opacity:0 , x:-100}} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{duration:1 , ease:'easeOut' ,delay:0.8}} className="text-4xl font-bold tracking-tighter">Front-End Developer</motion.h2>
+      <div className="absolute bottom-8 sm:bottom-12 lg:bottom-20 left-4 sm:left-6 lg:left-10 z-40 text-white">
+        <motion.p initial={{opacity:0 , x:-100}} whileInView={{ opacity: 0.50, x: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{duration:1 , ease:'easeOut' ,delay:0.4}} className="text-xs sm:text-sm lg:text-sm tracking-[0.2em] sm:tracking-[0.25em] lg:tracking-[0.3em] uppercase opacity-50"> Seif Venom </motion.p>
+        <motion.h2 initial={{opacity:0 , x:-100}} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{duration:1 , ease:'easeOut' ,delay:0.8}} className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tighter">Front-End Developer</motion.h2>
       </div>
     </section>
     )

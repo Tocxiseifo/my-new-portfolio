@@ -10,7 +10,7 @@ export default function ProjectSection() {
     const [activeId , setActiveId] = useState<number | null>(null)
     const {x , y} = useMouseTracker()
     return(
-        <section id="Projects" className="w-full h-250 bg-white  text-main-color font-seif text-[16px] ">
+        <section id="Projects" className="w-full min-h-screen lg:h-250 bg-white text-main-color font-seif text-[16px] px-3 sm:px-5 lg:px-0">
             {ProjectLists.map((project,index ) =>{
                 return(
                     <>
@@ -22,13 +22,13 @@ export default function ProjectSection() {
                         onMouseEnter={() => setActiveId(project.id)}
                         onMouseLeave={() => setActiveId(null)}
                         transition={{duration:1 , ease:'easeOut' ,delay:index * 0.6}}  
-                        className="flex flex-col w-full h-auto pt-20 "
+                        className="flex flex-col w-full h-auto pt-10 sm:pt-14 lg:pt-20"
                         >
-                            <div className="flex flex-col h-18  ml-5 relative  border-2 border-transparent text-main-color rounded-md overflow-hidden group ">
+                            <div className="flex flex-col h-18 ml-0 sm:ml-2 lg:ml-5 relative border-2 border-transparent text-main-color rounded-md overflow-hidden group">
                                 <span className="absolute inset-0 bg-black translate-y-full group-hover:translate-y-0 transition-transform duration-400 z-0"></span>
-                                <div className="relative flex flex-col z-10 ml-5 mt-2 h-37 group-hover:text-white transition-colors duration-400">
-                                    <a href={project.Link} className="text-2xl cursor-pointer border-2 border-b-main-color border-t-transparent border-x-transparent ">{project.title}</a>
-                                    <span className="text-gray-400 text-sm ">{project.techStack}</span>
+                                <div className="relative flex flex-col z-10 ml-3 sm:ml-4 lg:ml-5 mt-2 h-37 group-hover:text-white transition-colors duration-400 pr-2">
+                                    <a href={project.Link} className="text-lg sm:text-xl lg:text-2xl cursor-pointer border-2 border-b-main-color border-t-transparent border-x-transparent">{project.title}</a>
+                                    <span className="text-gray-400 text-xs sm:text-sm lg:text-sm break-words">{project.techStack}</span>
                                 </div>
                             </div>
                             <AnimatePresence>
@@ -44,7 +44,7 @@ export default function ProjectSection() {
                                     }}
                                     exit={{ opacity: 0, scale: 0.8, rotate: -5 }}
                                     transition={{ type: 'spring', stiffness: 150, damping: 15 }}
-                                    className="absolute top-200 left-0 pointer-events-none z-50 w-[600px] h-[350px] rounded-2xl overflow-hidden border border-white/20 shadow-2xl"
+                                    className="hidden lg:block absolute top-200 left-0 pointer-events-none z-50 w-[600px] h-[350px] rounded-2xl overflow-hidden border border-white/20 shadow-2xl"
                                 >
                                     <img 
                                     src={project.image} 

@@ -14,3 +14,16 @@
   --color-third-color:oklch(55.40% 0.227 29.23);
   --font-seif: seif , 'sens-serif'
 }
+
+@media (max-width: 1023px) {
+  #skills > div {
+    width: 75%;
+    min-width: 145px;
+    height: 16rem;
+    padding: 1rem;
+  }
+}
+html, body {
+  overflow-x: hidden; /* عشان ميبقاش فيه سكرول عرضي بايخ للموقع كله */
+  height: auto;
+}

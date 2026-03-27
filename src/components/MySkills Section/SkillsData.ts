@@ -81,9 +81,3 @@ export const skillsData : MySkillsData[] = [
         style:'flex flex-col gap-8 justify-center items-center  h-80 w-67 rounded-3xl hover:bg-linear-to-b hover:from-black hover:to-[#6cc24a] bg-neutral-900 grayscale hover:grayscale-0 border hover:border-[#6cc24a] transition-all duration-500 hover:duration-500  p-6 relative border-white/10 group overflow-hidden hover:shadow-[0px_0px_20px_2px_#6cc24a] hover:translate-y-[-15px] '
     },
 ]
-
-// const techColors = {
-//     reactRouter:'shadow-[0_0_20px_rgba(202,66,69,0.3)] border-[#CA4245]',
-//     axios: "shadow-[0_0_20px_rgba(90,41,228,0.3)] border-[#5A29E4]",
-//     framerMotion: "shadow-[0_0_20px_rgba(255,0,200,0.3)] border-[#FF00C8]",
-// }

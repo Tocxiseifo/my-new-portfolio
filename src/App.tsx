@@ -22,8 +22,8 @@ function App() {
   }, []);
   return (    
     <>
-      <NavBar />
-      <div className='bg-main-color w-full h-auto font-seif  relative aspect-3/4'>
+      <div className='bg-main-color w-full h-1400 lg:h-1050 font-seif overflow-hidden relative aspect-3/4'>
+        <NavBar />
         <HeroSection />
         <ProjectSection />
         <MySkillsSection />
