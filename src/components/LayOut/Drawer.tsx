@@ -3,6 +3,7 @@ import { styled } from '@mui/material/styles';
 import { Drawer, AppBar as MuiAppBar, Toolbar, Typography, IconButton, List, ListItem, ListItemButton, ListItemText, CssBaseline } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
+import { motion , useScroll } from "motion/react"
 
 const drawerWidth = 280;
 
@@ -24,11 +25,12 @@ const DrawerHeader = styled('div')(({ theme }) => ({
 
 export default function DrawerS() {
   const [open, setOpen] = React.useState(false);
+  const {scrollYProgress} = useScroll()
 
   const navItems = [
-    { name: 'Home', id: '#home' },
-    { name: 'Projects', id: '#projects' },
-    { name: 'About', id: '#about' },
+    { name: 'Home', id: '#' },
+    { name: 'Projects', id: '#Projects' },
+    { name: 'About', id: '#About' },
     { name: 'Skills', id: '#skills' },
     { name: 'Contact', id: '#Contact' },
   ];
@@ -63,7 +65,10 @@ export default function DrawerS() {
           >
             <MenuIcon />
           </IconButton>
+          
         </Toolbar>
+        <motion.span style={{ scaleX: scrollYProgress, originX: 0 }} className="border-2 w-full border-black relative top-0.5 "></motion.span>
+
       </AppBar>
 
       <Drawer
@@ -97,7 +102,7 @@ export default function DrawerS() {
                   primaryTypographyProps={{
                     fontSize: '1.2rem',
                     fontWeight: 'bold',
-                    className: 'font-seif hover:text-gray-400 transition-colors uppercase tracking-widest'
+                    className: 'font-seif hover:text-gray-400  transition-colors uppercase tracking-widest'
                   }} 
                 />
               </ListItemButton>

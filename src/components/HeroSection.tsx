@@ -24,8 +24,8 @@ export default function HeroSection() {
       // إعدادات الرعشة (Glitch Animation)
 
   return (
-    <section id='home' className="relative min-h-auto lg:h-250 bg-[#050505] flex lg:mt-25 items-center justify-center overflow-hidden font-seif px-4 sm:px-6 lg:px-0">
-      <motion.h1 initial={{opacity:0 , y:100}} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{duration:1 , ease:'easeOut' ,delay:0.2}} className="absolute text-[16vw] lg:text-[18vw] font-black text-white/5 uppercase select-none  font-seif">
+    <section id='home' className="relative h-150 lg:h-130 xl:h-225 bg-[#050505] flex lg:mt-25 items-center justify-center overflow-hidden font-seif px-4 sm:px-6 lg:px-0">
+      <motion.h1 initial={{opacity:0 , y:100}} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{duration:1 , ease:'easeOut' ,delay:0.2}} className="absolute text-[16vw]  font-black text-white/5 uppercase select-none  font-seif">
         Seif Venom
       </motion.h1>
 

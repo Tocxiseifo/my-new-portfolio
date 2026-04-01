@@ -10,7 +10,7 @@ export default function ProjectSection() {
     const [activeId , setActiveId] = useState<number | null>(null)
     const {x , y} = useMouseTracker()
     return(
-        <section id="Projects" className="w-full min-h-screen lg:h-250 bg-white text-main-color font-seif text-[16px] px-3 sm:px-5 lg:px-0">
+        <section id="Projects" className="w-full h-180 md:h-210 lg:h-250 bg-white text-main-color font-seif text-[16px] px-3 sm:px-5 lg:px-0">
             {ProjectLists.map((project,index ) =>{
                 return(
                     <>

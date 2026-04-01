@@ -22,7 +22,7 @@ function App() {
   }, []);
   return (    
     <>
-      <div className='bg-main-color w-full h-1400 lg:h-1050 font-seif overflow-hidden relative aspect-3/4'>
+      <div className='bg-main-color w-full h-fit   font-seif overflow-hidden relative  '>
         <NavBar />
         <HeroSection />
         <ProjectSection />
